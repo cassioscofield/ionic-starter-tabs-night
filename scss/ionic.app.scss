@@ -1,0 +1,179 @@
+// Variables
+$light:                           #ffffff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #5bc0de !default;
+$calm:                            #bc5cbc !default;
+$balanced:                        #62c462 !default;
+$energized:                       #e08404 !default;
+$assertive:                       #ee5f5b !default;
+$royal:                           #886aea !default;
+$dark:                            #444444 !default;
+
+// Non-default variables 
+$gray-base:              #060606 !default;
+$gray-darkest:           #222 !default;
+$gray-darker:            #272B30 !default;
+$gray-dark:              #3A3F44 !default;
+$gray:                   #52575C !default;
+$gray-light:             #7A8288 !default;
+$gray-lighter:           #AAA !default;
+$gray-lightest:          #DDD !default;
+
+// Override colors
+$stable: $gray-dark;
+$primary: $gray-lighter;
+
+$base-background-color: $gray-darker !default;
+$base-color:                  #C8C8C8 !default;
+
+$button-light-text:           #fff;
+$button-light-border:         rgba(0,0,0,0.6) !default;
+$button-light-active-bg:       darken($light, 10%) !default;
+$button-light-active-border:   rgba(0,0,0,0.6) !default;
+
+$button-stable-text:           $light !default;
+$button-stable-border:         rgba(0,0,0,0.6) !default;
+$button-stable-active-bg:      $gray-light !default;
+$button-stable-active-border:  rgba(0,0,0,0.6) !default;
+$button-stable-bg:             rgba(0,0,0,0.6) !default;
+
+$button-positive-border:       rgba(0,0,0,0.6) !default;
+$button-calm-border:           rgba(0,0,0,0.6) !default;
+$button-balanced-border:       rgba(0,0,0,0.6) !default;
+$button-energized-border:      rgba(0,0,0,0.6) !default;
+$button-assertive-border:      rgba(0,0,0,0.6) !default;
+
+// toggles 
+$toggle-off-bg-color:            $gray-light;
+$toggle-off-border-color:        rgba(0,0,0,0) !default;
+
+// Item overirdes
+$item-default-bg:                 lighten($gray-darker, 5%) !default;
+$item-default-border:             rgba(0, 0, 0, 0.6) !default;
+$item-default-text:               $base-color !default;
+$item-default-active-bg:          lighten($gray-darker, 10%) !default;
+$item-default-active-border:      rgba(0, 0, 0, 0.6) !default;
+
+$item-divider-bg:                 darken($gray-darker, 5%) !default;
+$item-divider-color:              $base-color;
+
+// inputs
+$input-bg:                        $gray-light;
+$input-bg-disabled:               $gray-lighter;
+$input-color:                     $light;
+$input-color-placeholder:         $gray-lighter;
+$input-label-color:               $dark !default;
+
+// Tabs
+$tabs-stable-bg:                  $button-stable-bg !default;
+$tabs-stable-border:              $button-stable-border !default;
+$tabs-stable-text:                $button-stable-text !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "../www/lib/ionic/scss/ionic.scss";
+
+body {
+  background: $gray-darker;
+  color: $gray-lightest;
+}
+
+.item-input textarea {
+  background: transparent;
+}
+
+.menu {
+  background: $gray-darkest;
+}
+
+.item[disabled] {
+  color: $gray-light;
+}
+
+.bar {
+  color: $light;
+}
+
+.input-label {
+  color: $light;
+}
+
+ion-header-bar.bar.bar-header {
+  background: $gray-darkest;
+}
+
+h2, h1.title, button.button.button-clear {
+  color: $light;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active {
+  background: $gray-darker;
+}
+
+.button.button-light, .button.button-light:hover, h3.popup-title {
+  color: $gray-dark;
+}
+
+button.button.button-block.button-primary {
+  border: $gray-lighter;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.popup-head, .popup-buttons {
+  background: $base-color;
+}
+
+a.item.item-icon-right, .item p, p {
+  color: $gray-lightest;
+}
+
+.item {
+  color: $gray-lightest;
+}
+
+.tabs-icon-top > .tabs .tab-item, .tabs-icon-top.tabs .tab-item, .tabs-icon-bottom > .tabs .tab-item, .tabs-icon-bottom.tabs .tab-item {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.tabs-striped.tabs-color-light .tab-item.tab-item-active, .tabs-striped.tabs-color-light .tab-item.active, .tabs-striped.tabs-color-light .tab-item.activated {
+  margin-top: -4px;
+  color: $light;
+  border-top-width: 4px;
+  height: 50px;
+}
+
+button.button.button-outline.button-light {
+  color: $light;
+  border-color: $light;
+}
+
+button.button.button-outline.button-dark {
+  color: $gray-lighter;
+  border-color: $gray-lighter;
+}
+
+button.button.button-outline.button-stable {
+  color: $light;
+  border-color: $light;
+  border-width: 3px;
+}
+
+button.button.button-outline {
+  color: $light;
+  background-color: $gray-darkest;
+  border-color: $light;
+  border-width: 3px;
+}
+
+button.button.button-outline {
+  border-width: 2px;
+}
+
+button.col.button.button.button-block {
+  margin-right: 5px;
+  margin-left: 5px;
+}
