@@ -1,9 +1,10 @@
 {
-    "name": "ionic-slate",
-    "version": "1.1.1",
-    "description": "A custom ionic theme based off of Bootswatch slate theme",
+    "name": "ionic-starter-tabs-night",
+    "version": "1.0.1",
+    "description": "A custom ionic theme based off of ionic-slate, based off of Bootswatch slate theme",
     "authors": [
-        "Joseph Livecchi"
+        "Joseph Livecchi",
+        "Cássio Scofield"
     ],
     "dependencies": {
         "gulp": "^3.5.6",

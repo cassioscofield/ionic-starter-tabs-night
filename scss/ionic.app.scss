@@ -186,6 +186,11 @@ button.col.button.button.button-block {
   background-color: $gray-darker;
 }
 
+.popup-container textarea {
+  background-color: $gray-dark;
+  color: $gray-lightest;
+}
+
 span, option, select, .item-select select {
   color: $gray-lighter;
 }

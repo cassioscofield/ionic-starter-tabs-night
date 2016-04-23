@@ -9802,6 +9802,10 @@ button.col.button.button.button-block {
 .popup-body {
   background-color: #272B30; }
 
+.popup-container textarea {
+  background-color: #3A3F44;
+  color: #DDD; }
+
 span, option, select, .item-select select {
   color: #AAA; }
 
